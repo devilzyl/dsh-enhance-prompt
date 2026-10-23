@@ -1,0 +1,49 @@
+{
+  "name": "dsh-enhance-prompt",
+  "version": "1.0.0",
+  "description": "DeepSeek Harness plugin: a composer button that rewrites the current draft into a clearer, more specific prompt with your own configured model, and can restore the draft it replaced.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "prompt",
+    "prompt-enhancement"
+  ],
+  "license": "MIT",
+  "author": "dsh-enhance-prompt contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devilzyl/dsh-enhance-prompt.git"
+  },
+  "homepage": "https://github.com/devilzyl/dsh-enhance-prompt#readme",
+  "bugs": "https://github.com/devilzyl/dsh-enhance-prompt/issues",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": false,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}

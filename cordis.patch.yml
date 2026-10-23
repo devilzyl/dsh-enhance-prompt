@@ -1,0 +1,4 @@
+- insert:
+    - id: prompt-enhance
+      name: 'dsh-enhance-prompt'
+      config: {}

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Prompt Enhance",
+    "description": "Adds an Enhance prompt button to the composer tool row: it rewrites the current draft into a clearer, more specific prompt with your own model, and can restore the draft it replaced."
+  }
+}
